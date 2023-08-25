@@ -3,7 +3,7 @@ const { seedData, getList, getStatistics, getBarCharData, getPieChartData, getAl
 const router = require('express').Router()
 
 // initialized database with seed data
-router.get("/", seedData)
+router.get("/seed-data", seedData)
 // Get list of transaction base on search and date
 router.get("/transactions", getList)
 // Get Statistics
